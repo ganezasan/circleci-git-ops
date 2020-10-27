@@ -14,7 +14,7 @@ jobs:
           name: push another branch
           command: |
             git checkout develop
-            git commit --allow-empty -m '[ci skip] test'
+            git merge main
             git push origin develop
 workflows:
   version: 2
